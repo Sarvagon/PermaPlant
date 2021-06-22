@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PermaPlant - Base de données</title>
+    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"><link href="css/flexslider.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href="css/flexslider.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href="css/flexslider.css" rel="stylesheet" >
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/queries.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+
+    
+    <body id="top">
+
+        <section class="Livre" id="Livre">
+        <div class="row centre">
+            <div class="col-md-8 col-md-offset-2 text-center inner">
+            <p class="animated fadeInUp delay-03s">“ Qui a planté un arbre n'a pas vécu inutilement.”</p> <!-- Citation avec delais de 0.3 seconde -->
+            <p class="animated fadeInUp delay-05s"><pv>Proverbe africain ; L'Afrique en proverbes (1905)</pv></p> <!-- Auteur de la citation avec delais de 0.5 seconde-->
+        <div/>
+        <!-- Barre de recherche éventuelle dans le cas où l'utilisateur voudrait faire une recherche rapide (non fonctionnelle pour le moment) -->
+        <form class="centrebis">
+            <div>
+
+                <label class="animated fadeInUp delay-05s" for="site-search">Recherche d'un arbre dans la base de données :</label>
+
+
+
+                <input class="animated fadeInUp delay-03s" class="form-control mr-sm-2" type="search" placeholder="Entrer votre recherche"id="site-search" name="q" aria-label="Search through site content" size="30" required>
+                <button class="animated fadeInUp delay-04s" class="btn btn-outline-info my-2 my-sm-0" type="submit" >Valider</button>
+                <span class ="validity"></span>
+            </div>
+            
+    
+        </form>
+        <p class="animated fadeInUp delay-04s">Revenir à la page d'accueil : <a href="index.html">index</a></p>
+        <p class="animated fadeInUp delay-05s">Revenir à la page de connexion : <a href="connexion.html">connexion</a></p>
+        <p class="animated fadeInUp delay-06s">Revenir à la page de compte : <a href="compte.html">compte</a></p>
+        <p class="animated fadeInUp delay-07s">Document detaillant un arbre choisi : <a href="descriptif.html">descriptif</a> </p>
+        <!-- Base de donnée que l'on peut proposer (nous pouvons mettre le lien vers un document .htm immaginaire vers lequel le client aurait été redirigé en choisissant son arbre, sans toutefois créer ce fameux document par manque de temps; le but étant de montrer la structure principale du site) -->
+        
+
+        <!-- ATTENTION : La base qui vous est proposé ci-dessous a été inspirée des informations mises à disposition par le site suivant : https://www.afsq.org/cle-forestiere/liste-arbre.html -->
+        <!-- L'utilisateur devra pouvoir créer son porpre arbre dans une catégorie qu'il choisira pour pouvoir l'enregistrer (il ne doit PAS pouvoir enregistrer un arbre déjà PRESENT dans la base) -->
+      <p class="animated fadeInUp delay-07s">Base de données des arbres , classés selon leur catégorie et rangés dans l'ordre alphabétique : </p>
+      <div align="center">
+        <select name="select1" size="1" class="texte" id="selectA">
+            <option selected>Catégorie : ARBUSTES ET BUISSONS</option>
+            <option value="airelle_rouge.htm">Airelle rouge</option>
+            <option value="airelle_des_marais.htm">Airelle des marais</option>
+            <option value="ajonc_europeen.htm">Ajonc d'Europe</option>
+            <option value="ajonc_nain.htm">Ajonc nain</option>
+            <option value="alisier.htm">Alisier</option>
+            <option value="althea.htm">Althea</option>
+            <option value="arbousier.htm">Arbousier</option>
+            <option value="argousier.htm">Argousier</option>
+            <option value="aubepine.htm">Aubépine</option>
+            <option value="aucuba_du_Japon.htm">Aucuba du Japon</option>
+            <option value="azalee_fleuriste.htm">Azalée des fleuristes</option>
+            <option value="bauhinia.htm">Bauhinia</option>
+            <option value="berberis.htm">Berberis</option>
+            <option value="bougainvillier.htm">Bougainvillier</option>
+            <option value="bourdaine.htm">Bourdaine</option>
+            <option value="brugmansia.htm">Brugmansia</option>
+            <option value="bruyere_arborescente.htm">Bruyere arborescente</option>
+            <option value="bruyere_cendree.htm">Bruyere cendree</option>
+            <option value="bruyere_vagabonde.htm">Bruyère vagabonde</option>
+            <option value="buddleia.htm">Buddleia</option>
+            <option value="buis.htm">Buis</option>
+            <option value="cactus_noel.htm">Cactus</option>
+            <option value="callistemon.htm">Callistemon</option>
+            <option value="camelia.htm">Camélia</option>
+            <option value="callune.htm">Callune</option>
+            <option value="caoutchouc.htm">Caoutchouc</option>
+            <option value="cassia.htm">Cassia</option>
+            <option value="ceanothe.htm">Ceanothe</option>
+            <option value="chamaerops.htm">Chamaerops</option>
+            <option value="chene_kermes.htm">Chêne kermes</option>
+            <option value="chamaedorea.htm">Chamaedorea</option>
+            <option value="oranger_mexique.htm">Choisya ternata</option>
+            <option value="cineraire.htm">Cineraire</option>
+            <option value="ciste_montpellier.htm">Ciste de Montpellier</option>
+            <option value="cognassier_japon.htm">Cognassier du Japon</option>
+            <option value="cornouillers.htm">CORNOUILLERS</option>
+            <option value="cornouiller_japon.htm">Cornouiller du Japon</option>
+            <option value="cornouiller_male.htm">Cornouiller mele</option>
+            <option value="cornouiller_sanguin.htm">Cornouiller sanguin</option>
+            <option value="cornouiller_tabulaire.htm">Cornouiller tabulaire</option>
+            <option value="cotoneaster.htm">Cotoneaster</option>
+            <option value="fustet.htm">Cotinus</option>
+            <option value="brugmansia.htm">Datura</option>
+            <option value="morelle.htm">Douce amère</option>
+            <option value="eglantier.htm">Eglantier</option>
+            <option value="elaeagnus.htm">Elaeagnus</option>
+            <option value="euph_arbo.htm">Euphorbe arborescente</option>
+            <option value="euphorbe_characias.htm">Euphorbe characias</option>
+            <option value="euph_epineuse.htm">Euphorbe épineuse</option>
+            <option value="escallonia.htm">Escallonia</option>
+            <option value="thym.htm">Farigoule</option>
+            <option value="fatsia.htm">Fatsia</option>
+            <option value="caoutchouc.htm">Ficus</option>
+            <option value="figuier_de_barbarie.htm">Figuier de Barbarie</option>
+            <option value="forsythia.htm">Forsythia</option>
+            <option value="framboisier.htm">Framboisier</option>
+            <option value="fusain_japon.htm">Fusain du Japon</option>
+            <option value="fuchsia.htm">Fuchsia</option>
+            <option value="fustet.htm">Fustet</option>
+            <option value="genet.htm">Genet</option>
+            <option value="genet_canaries.htm">Genet des Canaries</option>
+            <option value="groseiller.htm">Groseiller</option>
+            <option value="gui.htm">Gui</option>
+            <option value="hibiscus.htm">Hibiscus Rose de Chine</option>
+            <option value="hortensia.htm">Hortensia</option>
+            <option value="kerria.htm">Kerria</option>
+            <option value="lagerstroemia.htm">Lagerstroemia</option>
+            <option value="laurier_cerise.htm">Laurier Cerise</option>
+            <option value="laurier_rose.htm">Laurier rose</option>
+            <option value="laurier_sauce.htm">Laurier sauce</option>
+            <option value="lavande.htm">Lavande</option>
+            <option value="lentisque.htm">Lentisque</option>
+            <option value="mahonia.htm">Mahonia</option>
+            <option value="melianthus.htm">Melianthe</option>
+            <option value="morelle.htm">Morelle douce amère</option>
+            <option value="myricaria.htm">Myricaria</option>
+            <option value="myrte.htm">Myrte</option>
+            <option value="myrtille.htm">Myrtille</option>
+            <option value="nandina.htm">Nandine domestique</option>
+            <option value="nerprun_alaterne.htm">Nerprun alaterne</option>
+            <option value="obier.htm">Obier</option>
+            <option value="oranger_mexique.htm">Oranger du Mexique</option>
+            <option value="paliurus.htm">Paliure</option>
+            <option value="chamaerops.htm">Palmier nain</option>
+            <option value="philodendron.htm">Philodendron</option>
+            <option value="phlomis_fruticosa.htm">Phlomis fruticosa</option>
+            <option value="photinia.htm">Photinia</option>
+            <option value="pittosporum.htm">Pittosporum</option>
+            <option value="polygala.htm">Polygala</option>
+            <option value="pyracantha.htm">Pyracantha</option>
+            <option value="raisindours.htm">Raisin d'ours</option>
+            <option value="rhododendron.htm">Rhododendron</option>
+            <option value="rhododendron_ferru.htm">Rhododendron ferrugineux</option>
+            <option value="ricin.htm">Ricin</option>
+            <option value="romarin.htm">Romarin</option>
+            <option value="ronce.htm">Ronce</option>
+            <option value="rosier_rugueux.htm">Rosier rugueux</option>
+            <option value="rosiers.htm">Rosiers</option>
+            <option value="salsepareille.htm">Salsepareille</option>
+            <option value="sauge_graham.htm">Sauge à petites feuilles</option>
+            <option value="saule_vannier.htm">Saule des vanniers</option>
+            <option value="saule_marsault.htm">Saule Marsault</option>
+            <option value="senecon.htm">Seneçon arbuste</option>
+            <option value="solanum.htm">Solanum</option>
+            <option value="sorbier.htm">Sorbier des oiseleurs</option>
+            <option value="spiree.htm">Spirée du japon</option>
+            <option value="sureau_noir.htm">Sureau noir</option>
+            <option value="sumac_virginie.htm">Sumac de Virginie</option>
+            <option value="symphorine.htm">Symphorine</option>
+            <option value="tamaris.htm">Tamaris</option>
+            <option value="myricaria.htm">Tamaris d'Allemagne</option>
+            <option value="thym.htm">Thym</option>
+            <option value="troene.htm">Troène</option>
+            <option value="veronique.htm">Veronique</option>
+            <option value="viorne.htm">Viorne</option>
+          </select>
+        </div>
+      </td>
+      <td>
+        <div align="center">
+          <select name="select2" size="1" class="texte" id="selectB">
+            <option selected>Catégorie : ARBRES FRUITIERS</option>
+            <option value="arbousier.htm">Arbousier</option>
+            <option value="bigaradier.htm">Bigaradier</option>
+            <option value="caroubier.htm">Caroubier</option>
+            <option value="cerisier.htm">Cerisier</option>
+            <option value="chataignier.htm">Chataignier</option>
+            <option value="citronnier.htm">Citronnier</option>
+            <option value="cognassier.htm">Cognassier</option>
+            <option value="figuier.htm">Figuier</option>
+            <option value="grenadier.htm">Grenadier</option>
+            <option value="jacquier.htm">Jacquier</option>
+            <option value="kapokier.htm">Kapokier</option>
+            <option value="kumquat.htm">Kumquat</option>
+            <option value="lentisque.htm">Lentisque</option>
+            <option value="neflier.htm">Nêflier</option>         
+            <option value="noyer.htm">Noyer</option>
+            <option value="olivier.htm">Olivier</option>
+            <option value="oranger.htm">Oranger</option>
+            <option value="papayer.htm">Papayer</option>
+            <option value="pecher.htm">Pêcher</option>
+            <option value="poirier.htm">Poirier</option>
+            <option value="poivrier_sichuan.htm">Poivrier de Sichuan</option>
+            <option value="pommier.htm">Pommier</option>
+            <option value="prunellier.htm">Prunellier</option>
+            <option value="prunier.htm">Prunier</option>                
+            <option value="spiree.htm">Spirée du japon</option>                
+            <option value="vigne.htm">Vigne</option>
+          </select>
+          </div>
+        </td>
+      <td>
+        <div align="center">
+          <select name="select3" size="1" class="texte" id="selectC">
+            <option selected>Catégorie : ARBRES FEUILLUS</option>
+            <option value="robinier.htm">Acacia</option>
+            <option value="ailante.htm">Ailante</option>
+            <option value="albizia.htm">Albizia</option>
+            <option value="cercis.htm">Arbre de Judée</option>
+            <option value="aubepine.htm">Aubépine</option>
+            <option value="aune.htm">Aune</option>
+            <option value="bignone.htm">Bignone</option>
+            <option value="bouleau_himalaya.htm">Bouleau de l'Himalaya</option>
+            <option value="bouleau_pubescens.htm">Bouleau pubescent</option>
+            <option value="bouleau_verruqueux.htm">Bouleau verruqueux</option>
+            <option value="caoutchouc.htm">Caoutchouc</option>
+            <option value="caroubier.htm">Caroubier</option>
+            <option value="catalpa.htm">Catalpa</option>
+            <option value="charme-houblon.htm">Charme-houblon</option>
+            <option value="charme.htm">Charme</option>
+            <option value="chataignier.htm">Chataignier</option>
+            <option value="chenes.htm">CHENES</option>
+            <option value="chene_kermes.htm">Chêne kermes</option>
+            <option value="chene-hispanique.htm">Chêne hispanique;</option>
+            <option value="chene-liege.htm">Chêne liège</option>
+            <option value="chene_marais.htm">Chêne des marais</option>
+            <option value="chene-pedoncule.htm">Chêne pédoncule</option>
+            <option value="chene-pubescent.htm">Chêne pubescent</option>
+            <option value="chene_rouge.htm">Chêne rouge</option>
+            <option value="chene-sessile.htm">Chêne sessile</option>
+            <option value="chene_tauzin.htm">Chêne tauzin</option>
+            <option value="chene-vert.htm">Chêne vert</option>
+            <option value="cormier.htm">Cormier</option>
+            <option value="cornouiller_japon.htm">Cornouiller du Japon</option>
+            <option value="erables.htm">ERABLES</option>
+            <option value="erable_argente.htm">Erable argenté</option>
+            <option value="erable_champetre.htm">Erable champêtre</option>
+            <option value="erable_gris.htm">Erable gris</option>
+            <option value="erable_montpellier.htm">Erable de Montpellier</option>
+            <option value="erable_palme.htm">Erable palmé</option>
+            <option value="erable_negondo.htm">Erable négondo</option>
+            <option value="erable_plane.htm">Erable plane</option>
+            <option value="erable_sycomore.htm">Erable sycomore</option>
+            <option value="caoutchouc.htm">Ficus</option>
+            <option value="figuier.htm">Figuier</option>
+            <option value="frene.htm">Frêne</option>
+            <option value="ginkgo.htm">Ginkgo</option>
+            <option value="hetre.htm">Hêtre</option>
+            <option value="houx.htm">Houx</option>
+            <option value="jacquier.htm">Jacquier</option>
+            <option value="kapokier.htm">Kapokier</option>
+            <option value="lagerstroemia.htm">Lagerstroemia</option>
+            <option value="lentisque.htm">Lentisque</option>
+            <option value="lilas.htm">Lilas</option>
+            <option value="liquidambar.htm">Liquidambar</option>
+            <option value="magnolia.htm">Magnolia</option>
+            <option value="marronnier_inde.htm">Marronnier d'Inde</option>
+            <option value="marronnier_rouge.htm">Marronnier rouge</option>
+            <option value="melia_azedarach.htm">Melia azedarach</option>
+            <option value="micocoulier.htm">Micocoulier</option>
+            <option value="mimosa_ete.htm">Mimosa d'été</option>
+            <option value="mimosa_hiver.htm">Mimosa d'hiver</option>
+            <option value="murier.htm">Mêrier</option>
+            <option value="nerprun_alaterne.htm">Nerprun alaterne</option>
+            <option value="noisetier.htm">Noisetier</option>
+            <option value="noyer.htm">Noyer</option>
+            <option value="obier.htm">Obier</option>
+            <option value="olivier.htm">Olivier</option>
+            <option value="charme-houblon.htm">Ostrya</option>
+            <option value="oranger-osage.htm">Oranger des Osages</option>
+            <option value="orme.htm">Orme</option>
+            <option value="papayer.htm">Papayer</option>
+            <option value="paulownia.htm">Paulownia</option>
+            <option value="peuplier_blanc.htm">Peuplier blanc</option>
+            <option value="peuplier_italie.htm">Peuplier d'Italie</option>
+            <option value="peuplier_tremble.htm">Peuplier tremble</option>
+            <option value="phlomis_fruticosa.htm">Phlomis fruticosa</option>
+            <option value="pittosporum.htm">Pittosporum</option>
+            <option value="plaqueminier.htm">Plaqueminier</option>
+            <option value="platane.htm">Platane</option>
+            <option value="pommier.htm">Pommier</option>
+            <option value="robinier.htm">Robinier</option>
+            <option value="rhododendron.htm">Rodhodendron</option>
+            <option value="rosier.htm">Rosier</option>
+            <option value="saule_blanc.htm">Saule blanc</option>
+            <option value="saule_marsault.htm">Saule Marsault</option>
+            <option value="saule_vannier.htm">Saule des vanniers</option>
+            <option value="saule_pleureur.htm">Saule pleureur</option>
+            <option value="savonnier.htm">Savonnier</option>
+            <option value="sophora.htm">Sophora du Japon</option>
+            <option value="sorbier.htm">Sorbier des oiseleurs</option>
+            <option value="sumac_laque.htm">Sumac à laque</option>
+            <option value="sureau_noir.htm">Sureau noir</option>
+            <option value="erable_sycomore.htm">Sycomore</option>
+            <option value="terebinthe.htm">Térébinthe</option>
+            <option value="tilleul.htm">Tilleul</option>
+            <option value="tulipier.htm">Tulipier</option>
+            <option value="peuplier_tremble.htm">Tremble</option>
+          </select>
+        </div>
+      </td>
+      <td>
+        <div align="center">
+          <select name="select4" size="1" class="texte" id="selectD">
+            <option selected>Catégorie : CONIFERES</option>
+            <option value="araucaria.htm">Araucaria</option>
+            <option value="cedre-du-liban.htm">Cèdre du Liban</option>
+            <option value="chamaecyparis.htm">Chamaecyparis</option>
+            <option value="cycas.htm">Cycas</option>
+            <option value="cypres_chauve.htm">Cyprès chauve</option>
+            <option value="cypres_commun.htm">Cyprès commun</option>
+            <option value="cypres_lambert.htm">Cyprès de Lambert</option>
+            <option value="cypres_leyland.htm">Cyprès de Leyland</option>
+            <option value="cypres_arizona.htm">Cyprès de l'Arizona</option>
+            <option value="epicea.htm">Epicea</option>
+            <option value="epicea_orient.htm">Epicea d'orient</option>
+            <option value="genevrier.htm">Genevrier</option>
+            <option value="ginkgo.htm">Ginkgo</option>
+            <option value="if.htm">If</option>
+            <option value="meleze.htm">Mélèze</option>
+            <option value="pins.htm">Pins</option>
+            <option value="pin_crochets.htm">Pin à crochets</option>
+            <option value="pin_cembro.htm">Pin cembro</option>
+            <option value="pin_alep.htm">Pin d'Alep</option>
+            <option value="pin_maritime.htm">Pin maritime</option>
+            <option value="pin_monterey.htm">Pin de Monterey</option>
+            <option value="pin_mugo.htm">Pin mugo</option>
+            <option value="pin_noir.htm">Pin noir</option>
+            <option value="pin_parasol.htm">Pin parasol</option>
+            <option value="pin_sylvestre.htm">Pin sylvestre</option>
+            <option value="podocarpus.htm">Podocarpus</option>
+            <option value="sapin_blanc.htm">Sapin blanc</option>
+            <option value="sapin_nordmann.htm">Sapin de Nordmann</option>
+            <option value="sequoia_geant.htm">Séquoia géant</option>
+            <option value="sequoia_sempervirens.htm">Séquoia toujours vert</option>
+            <option value="cypres_chauve.htm">Taxodium</option>
+            <option value="thuya.htm">Thuya</option>
+          </select>
+        </div>
+      </td>
+      <td>
+        <div align="center">
+          <select name="select5" size="1" class="texte" id="selectE">
+            <option selected>Catégorie : PLANTES GRIMPANTES</option>
+            <option value="kiwi.htm">Actinidia</option>
+            <option value="ampelopsis.htm">Ampelopsis</option>
+            <option value="bignone.htm">Bignone</option>
+            <option value="chevrefeuille.htm">Chevrefeuille</option>
+            <option value="clematite.htm">Clematite</option>
+            <option value="glycine.htm">Glycine</option>
+            <option value="gui.htm">Gui</option>
+            <option value="houblon.htm">Houblon</option>
+            <option value="jasmin_rose.htm">Jasmin rose</option>
+            <option value="kiwi.htm">Kiwi</option>
+            <option value="lierre.htm">Lierre</option>
+            <option value="parthenocissus.htm">Parthenocissus</option>
+            <option value="passiflore.htm">Passiflore</option>
+            <option value="philodendron.htm">Philodendron</option>
+            <option value="physalis.htm">Physalis</option>
+            <option value="platycerium.htm">Platycerium</option>
+            <option value="rosier_grimpant.htm">Rosiers grimpant</option>
+            <option value="salsepareille.htm">Salsepareille</option>
+            <option value="stephanotis.htm">Stephanotis</option>
+            <option value="vignesvierges.htm">VIGNES VIERGES</option>
+            <option value="volubilis.htm">Volubilis</option>
+            <option value="vigne.htm">Vigne</option>
+          </select>
+        </div>
+      </td>
+      <td>
+        <div align="center">
+          <select name="select6" size="1" class="texte" id="selectF">
+            <option selected>Catégorie : MONOCOTYLEDONES</option>
+            <option value="bambou.htm">Bambou</option>
+            <option value="bananier.htm">Bananier</option>
+            <option value="chamaedorea.htm">Chamaedorea</option>
+            <option value="chamaerops.htm">Chamaerops</option>
+            <option value="cocotier.htm">Cocotier</option>
+            <option value="dattier.htm">Dattier</option>
+            <option value="dracaena.htm">Dracaena</option>
+            <option value="ruscus.htm">Fragon</option>
+            <option value="palmiers.htm">PALMIERS</option>
+            <option value="chamaerops.htm">Palmier nain</option>
+            <option value="palmier_canaries.htm">Palmier des Canaries</option>
+            <option value="palmier_sucre.htm">Palmier à sucre</option>
+            <option value="trachycarpus.htm">Palmier chanvre</option>
+            <option value="ruscus.htm">Ruscus</option>             
+            <option value="yucca.htm">Yucca</option>
+            <option value="trachycarpus.htm">Trachycarpus</option>
+          </select>
+        </div>
+      </td> <!-- Fin de la base de donnée -->
+    </body>
+    <footer> <!-- Pied de page -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <ul class="legals">
+              <li><a>Terms &amp; Conditions :</a>
+                <ul>
+                  <li>  - Dans la mesure où nous avons obtenu le consentement de la personne concernée pour le traitement des données à caractère personnel, l’article 6, paragraphe 1, alinéa 1, alinéa 1A du RGPD s’applique comme base juridique.</li>
+                  <li>  - Si le traitement des données à caractère personnel est nécessaire à l’exécution d’un contrat avec la personne concernée ou des mesures précontractuelles prises par la personne concernée, l’article 6, paragraphe 1, alinéa 1b du RGPD s’applique comme base juridique.</li>
+                  <li>  - Si le traitement des données est le résultat d’une obligation légale à laquelle nous sommes soumis, nous nous référons alors à l’article 6, paragraphe 1, alinéa 1c du RGPD comme base légale.</li>
+                  <li>  - Lorsque des données à caractère personnel sont traitées afin de protéger les intérêts vitaux de la personne concernée ou d’une autre personne physique, il s’agit de la base juridique est l’article 6, paragraphe 1, premier alinéa (RGPD).</li>
+                  <li>  - Si le traitement des données sert une mission d’intérêt public ou est effectué dans l’exercice de l’autorité publique, nous renvoyons à l’article 6, paragraphe 1, premier alinéa du RGPD.</li>
+                  <li>  - Dans la mesure où le traitement des données à caractère personnel est nécessaire pour sauvegarder les intérêts légitimes du responsable du traitement ou d’un tiers, sans porter atteinte aux intérêts, aux droits fondamentaux ou aux libertés de la personne concernée, l’article 6, paragraphe 1, premier alinéa du RGPD s’applique comme base juridique.</li>
+                </ul>
+                <li><a>Legals :</a>
+                  <ul>
+                    <li>  - Jean Bertrand</li>
+                    <li>  - 34 Rue de Lille, Crambrai, 59400</li>
+                    <li>  - Bertrand, Jean, 06.06.06.06, 26578932</li>
+                  </ul>
+                </li>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Inclue tous les plugins compilés (ci-dessous), ou inclue des fichiers individuels si nécessaire -->
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/jquery.flexslider.js"></script>
+    <script src="js/modernizr.js"></script>
+  </body>
+</html>

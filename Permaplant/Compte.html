@@ -1,0 +1,231 @@
+<!-- Mise à jour le 04/01/2020 à 19h04 par Kélian -->
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>PermaPlant - Compte</title> <!--Nom de la page dans le navigateur-->
+  <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/flexslider.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link href="css/styles.css" rel="stylesheet">
+  <link href="css/queries.css" rel="stylesheet">
+  <link href="css/animate.css" rel="stylesheet">
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+</head>
+
+<body id="top">
+  <section class="Livre" id="Livre">
+    <div class="row centre">
+      <div class="col-md-8 col-md-offset-2 text-center inner">
+        <p class="animated fadeInUp delay-03s">“La mauvaise herbe n'est jamais qu'une plante mal aimée”</p> <!-- Citation avec delais de 0.3 seconde -->
+        <p class="animated fadeInUp delay-03s"><em>Ella Wheeler Wilcox</em></p> <!-- Auteur de la citation avec delais de 0.3 seconde-->
+        <span>
+          <!--Boutons qui dirigent vers les sections de la page -->
+          <a href="#ajout"><button type="button" class="btn btn-outline-success ">Ajouter un arbre</button></a>
+          <a href="#jardin"><button type="button" class="btn btn-outline-success">Mon jardin</button></a>
+          <a href="BaseDonnee.html"><button type="button" class="btn btn-outline-success">Répertoire de communauté</button></a>
+        </span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3 text-center">
+      </div>
+    </div>
+    </div>
+  </section> <!-- Fin de section -->
+  </head>
+
+  <body>
+    <section id="ajout" class="ajout formulaire"> <!--id qui permet d'être dirigé à l'ajout d'arbres-->
+      <div class="centrebis"> <!--Class qui permet de positionner-->
+        <!-- AJOUT D'ARBRE AU JARDIN -->
+        <h1>Mon jardin</h1>
+        <h2>Quel est votre type d'arbre</h2>
+          <div>
+            <label for="nom arbre">Nom commun du genre de l'arbre :</label>
+            <input type="text" id="nom arbre" name="nom arbre">
+          </div>
+          <div>
+            <label for="latin">Nom latin du genre :</label>
+            <input type="text" id="latin" name="latin">
+          </div>
+          <div>
+            <label for="variété">Nom de la variété :</label>
+            <input type="text" id="variété" name="variété">
+          </div>
+          <div>
+            <label for="provenance">Provenance :</label>
+            <input type="text" id="provenance" name="provenance">
+          </div>
+          <div>
+            <label for="greffe">Porte greffe :</label>
+            <input type="text" id="greffe" name="greffe">
+          </div>
+          <h2>Et son jardin ?</h2>
+          <div>
+            <label for="année">Son année de plantation :</label>
+            <input type="text" id="année" name="année">
+          </div>
+          <div>
+            <label for="nombre">Nombre d'arbres plantés :</label>
+            <input type="text" id="nombre" name="nombre">
+          </div>
+          <div>
+            <label for="zone">Zone de plantation :</label>
+            <input type="text" id="zone" name="zone">
+          </div>
+
+          <style>
+            #survol:hover {color:blue;}
+          </style>
+        <form action="">
+          <input class="bouton" type="submit" value="Valider">
+        </form>
+      </div>
+    </section><!-- Fin de section -->
+
+    <!--Début de section de groupe de carte des arbres-->
+    <section id="jardin" class="jardin"> <!--id permettant via un bouton configuré de se diriger à cette section-->
+      <div class="card-group"> <!--Permet d'intégrer un groupe de cartes-->
+        <div class="card" style="width: 18rem;"> <!--Création de carte et de ses dimensions-->
+          <img src="img/Aucuba.jpg" class="card-img-top format_img" alt="Aucune image affichée"> <!--Son image et son format-->
+          <div class="card-body">
+            <h5 class="card-title">Aucuba du Japon</h5>
+            <p class="card-text">L’Aucuba japonica (Aucuba du Japon) est l'espèce d'Aucuba la plus présente dans les jardins Européens. L'Aucuba est une plante de haie très ornementale apportant à un jardin de la sérénité et de l’harmonie.</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Nom latin : Aucuba japonica</li>
+            <li class="list-group-item">Famille : Cornaceae</li>
+            <li class="list-group-item">Provenance : Japon</li>
+            <li class="list-group-item">Porte greffe : Francs de Aucuba du Japon</li>
+            <li class="list-group-item">Année de plantation : 2019</li>
+            <li class="list-group-item">Nombre : 5</li>
+            <li class="list-group-item">Zone de plantation : Merville</li>
+          </ul>
+          <div class="card-body">
+            <a href="#" class="card-link">Modifier</a>
+            <a href="#" class="card-link">Supprimer</a>
+          </div>
+        </div>
+
+
+        <div class="card" style="width: 18rem;">
+          <img src="img/cognassier du japon.jpg" class="card-img-top format_img" alt="Aucune image affichée">
+          <div class="card-body">
+            <h5 class="card-title">Cognassier du Japon</h5>
+            <p class="card-text">Le Cognassier du Japon, est une plante de la famille des Rosacées, croissant à l'état sauvage au Japon. En Europe, il est utilisé comme arbuste ornemental donnant entre février et avril une magnifique floraison rouge vif ou rose selon les variétés.</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Nom latin : Chaenomeles japonica</li>
+            <li class="list-group-item">Famille : Rosaceae</li>
+            <li class="list-group-item">Provenance : Japon</li>
+            <li class="list-group-item">Porte greffe : Francs de Cognassier du Japon</li>
+            <li class="list-group-item">Année de plantation : 2020</li>
+            <li class="list-group-item">Nombre : 10</li>
+            <li class="list-group-item">Zone de plantation : Merville</li>
+          </ul>
+          <div class="card-body">
+            <a href="#" class="card-link">Modifier</a>
+            <a href="#" class="card-link">Supprimer</a>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <img src="img/hibiscus_rose_de_chine.jpg" class="card-img-top format_img" alt="Aucune image affichée">
+          <div class="card-body">
+            <h5 class="card-title">Hibiscus Rose de Chine</h5>
+            <p class="card-text">L'hibiscus Rose de Chine est une espèce de plantes à fleurs de la famille des Malvaceae. C'est l'hibiscus le plus connu et il a été utilisé dans de nombreuses hybridations. Il est souvent utilisé comme symbole des îles Hawaii dont il est la fleur nationale ainsi que celle de la Malaisie.</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Nom latin : Hibiscus rosa-sinensis</li>
+            <li class="list-group-item">Famille : Malvaceae</li>
+            <li class="list-group-item">Provenance : Chine</li>
+            <li class="list-group-item">Porte greffe : Non</li>
+            <li class="list-group-item">Année de plantation : 2019</li>
+            <li class="list-group-item">Nombre : 31</li>
+            <li class="list-group-item">Zone de plantation : Tugeras St Maurice</li>
+          </ul>
+          <div class="card-body">
+            <a href="#" class="card-link">Modifier</a>
+            <a href="#" class="card-link">Supprimer</a>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <img src="img/datura.jpg" class="card-img-top format_img" alt="Aucune image affichée">
+          <div class="card-body">
+            <h5 class="card-title">Datura</h5>
+            <p class="card-text">Datura est un genre de plantes de la famille des Solanacées, dont le centre de diversité se trouve au Mexique et dans le sud-ouest des États-Unis.</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Nom latin : Stramonium arboreum</li>
+            <li class="list-group-item">Famille : Solanaceae</li>
+            <li class="list-group-item">Provenance : Amérique du Sud</li>
+            <li class="list-group-item">Porte greffe : Non</li>
+            <li class="list-group-item">Année de plantation : 2020</li>
+            <li class="list-group-item">Nombre : 7</li>
+            <li class="list-group-item">Zone de plantation : Tugeras St Maurice</li>
+          </ul>
+          <div class="card-body">
+            <a href="#" class="card-link">Modifier</a>
+            <a href="#" class="card-link">Supprimer</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <!-- Pied de page -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <ul class="legals">
+              <li><a>Termes &amp; Conditions :</a> <!-- Termes et conditions légals -->
+                <ul>
+                  <li> - Dans la mesure où nous avons obtenu le consentement de la personne concernée pour le
+                    traitement des données à caractère personnel, l’article 6, paragraphe 1, alinéa 1, alinéa 1A du
+                    RGPD s’applique comme base juridique.</li>
+                  <li> - Si le traitement des données à caractère personnel est nécessaire à l’exécution d’un contrat
+                    avec la personne concernée ou des mesures précontractuelles prises par la personne concernée,
+                    l’article 6, paragraphe 1, alinéa 1b du RGPD s’applique comme base juridique.</li>
+                  <li> - Si le traitement des données est le résultat d’une obligation légale à laquelle nous sommes
+                    soumis, nous nous référons alors à l’article 6, paragraphe 1, alinéa 1c du RGPD comme base légale.
+                  </li>
+                  <li> - Lorsque des données à caractère personnel sont traitées afin de protéger les intérêts vitaux
+                    de la personne concernée ou d’une autre personne physique, il s’agit de la base juridique est
+                    l’article 6, paragraphe 1, premier alinéa (RGPD).</li>
+                  <li> - Si le traitement des données sert une mission d’intérêt public ou est effectué dans
+                    l’exercice de l’autorité publique, nous renvoyons à l’article 6, paragraphe 1, premier alinéa du
+                    RGPD.</li>
+                  <li> - Dans la mesure où le traitement des données à caractère personnel est nécessaire pour
+                    sauvegarder les intérêts légitimes du responsable du traitement ou d’un tiers, sans porter
+                    atteinte aux intérêts, aux droits fondamentaux ou aux libertés de la personne concernée, l’article
+                    6, paragraphe 1, premier alinéa du RGPD s’applique comme base juridique.</li>
+                </ul>
+              <li><a>Informations légales :</a> <!-- Informations légales -->
+                <ul>
+                  <li> - Jean Bertrand</li>
+                  <li> - 34 Rue de Lille, Crambrai, 59400</li>
+                  <li> - Bertrand, Jean, 06.06.06.06, 26578932</li>
+                </ul>
+              </li>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer> <!-- Fin pied de page -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Inclue tous les plugins compilés (ci-dessous), ou inclue des fichiers individuels si nécessaire -->
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/jquery.flexslider.js"></script>
+    <script src="js/modernizr.js"></script>
+  </body>

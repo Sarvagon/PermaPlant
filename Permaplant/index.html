@@ -1,0 +1,351 @@
+<!-- Mise à jour le 04/01/2020 à 19h04 par Kélian -->
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PermaPlant</title>
+  <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/flexslider.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+  <link href="css/queries.css" rel="stylesheet">
+  <link href="css/animate.css" rel="stylesheet">
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+</head>
+<!-- Entête avec menu "dépliant" si je puis dire, le but est que l'utilisateur puisse naviguer plus facilement entre les différentes parties qui composent le site grâce à des "liens"-->
+
+<!-- A NOTER : Les différentes classes appelées font appelles au CSS qui permettre la mise en forme du site -->
+
+<body id="top">
+  <header id="home">
+    <nav>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+            <nav class="pull">
+              <ul class="top-nav">
+                <li><a href="#intro">Qui sommes-nous ?<span class="indicator"><i
+                        class="fa fa-angle-right"></i></span></a></li>
+                <!-- Emmène à la rubrique #intro (qui sommes-nous) -->
+                <li><a href="#fonction">Fonctionnalités<span class="indicator"><i
+                        class="fa fa-angle-right"></i></span></a></li>
+                <!-- Emmène à la rubrique #fonction (Fonctionnalités) -->
+                <li><a href="#responsive">Un lieu d'échange et de partage<span class="indicator"><i
+                        class="fa fa-angle-right"></i></span></a></li>
+                <!-- Emmène à la rubrique #responsive (Un lieu d'échange et de partage) -->
+                <li><a href="#portfolio">Portfolio<span class="indicator"><i class="fa fa-angle-right"></i></span></a>
+                </li> <!-- Emmène à la rubrique #portfolio (Portfolio) -->
+                <li><a href="#groupe">Notre groupe<span class="indicator"><i class="fa fa-angle-right"></i></span></a>
+                </li> <!-- Emmène à la rubrique #groupe (Notre groupe) -->
+                <li><a href="#contact">Contactez nous<span class="indicator"><i
+                        class="fa fa-angle-right"></i></span></a></li>
+                <!-- Emmène à la rubrique #contact (Contactez nous)-->
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="hero" id="hero">
+      <!--Début de section -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-right navicon">
+            <a id="nav-toggle" class="nav_slide_button" href="#"><span></span></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2 text-center inner">
+            <h1 class="animated fadeInDown">Perma<span>Plant</span></h1> <!-- Titre principal -->
+            <p class="animated fadeInUp delay-03s">“Le plus grand partage qu'un être humain ferrait, est de planter un
+              arbre pour l'humanité.”</p> <!-- Citation -->
+            <p class="animated fadeInUp delay-03s"><em>Albert Zilevou</em></p> <!-- Auteur de la citation -->
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3 text-center">
+          </div>
+        </div>
+      </div>
+    </section> <!-- Fin de section -->
+  </header> <!-- Fin tête de page -->
+  <section class="intro text-center section-padding" id="intro">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2 wp1">
+          <h1 class="arrow">Qui sommes-nous ?</h1>
+          <p>PermaPlant est une<a href="https://www.linternaute.fr/dictionnaire/fr/definition/association/">
+              <!-- Lien vers la définition de l'internaute de "association" -->association
+            </a>. Ce site a pour but de mettre en relation des personnes souhaitant échanger connaissances et plantes
+            pour diversifier leur jardin.</p>
+        </div>
+      </div>
+    </div>
+  </section> <!-- Nouvelle section qui va permettre d'énumerer les différentes choses proposées à l'utilisateur -->
+  <section class="fonctions text-center section-padding" id="fonction">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="arrow">Ce qui est mis à votre disposition</h1>
+          <div class="features-wrapper">
+            <div class="col-md-4 wp2">
+              <div class="icon">
+                <!-- Appel la classe "icon" du css pour affichage -->
+                <i class="fa fa-laptop shadow"></i>
+              </div>
+              <h2>Tutoriels</h2>
+              <p>De nombreux tutos sont mis à votre disposition pour vous apprendre à bien vous occuper de vos végétaux.
+              </p>
+            </div>
+            <div class="col-md-4 wp2 delay-05s">
+              <div class="icon">
+                <i class="fa fa-code shadow"></i>
+              </div>
+              <h2>Base de donnée</h2>
+              <p>Une base de donnée riche et complète pour vous familiariser.</p>
+            </div>
+            <div class="col-md-4 wp2 delay-1s">
+              <div class="icon">
+                <i class="fa fa-heart shadow"></i>
+              </div>
+              <h2>Règles</h2>
+              <p>L'utilisation de ce site s'effectue avec un certain nombre de règles afin de conserver un endroit
+                conviviale où échanger.</p>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> <!-- Fin de la section -->
+  <section class="text-center" id="responsive">
+    <div class="container-fluid nopadding responsive-services">
+      <div class="wrapper">
+        <div class="respect">
+          <div class="wp3"></div>
+        </div>
+        <div class="fluid-white"></div>
+      </div>
+      <div class="container designs">
+        <div class="row">
+          <div class="col-md-5 col-md-offset-7">
+            <div id="servicesSlider">
+              <ul class="slides">
+                <li>
+                  <!-- Balise liste -->
+                  <h1 class="arrow">Le respect de la loi</h1>
+                  <p>La collecte de vos donnnées se fait dans le plus grand respect du RGPD.</p>
+                  <!-- Différent paragraphes pour structurer le texte -->
+                  <p>Vous trouverez ci-après la politique de confidentialité du site.</p>
+                  <p>Pour toute information complémentaire, n'hésitez pas à nous contacter via la rubrique en fin de
+                    page.</p>
+                </li>
+                <li>
+                  <h1 class="arrow">Nous sommes à votre écoute</h1>
+                  <p>Toute demande peut librement nous être adressée.</p>
+                  <p>Nous sommes un groupe de trois amateurs qui répondrons à vos demandes.</p>
+                  <p>Si vous trouvez un bug ou tout autre problème, n'hésitez pas à nous le signaler.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="swag text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <h1>J'ai un problème <span>mais <em>comment </em>le régler ?</span></h1>
+          <!-- Ceci est le prémice d'un endroit qui devrait servir à erdiriger l'utilisateur vers une autre page où une liste de potentiels problèmes rencontrés serait proposée afin de tenter de résoudre un problème en attendant une mise à jour du site. ATTENTION ! Aucun lien vers une autre page n'est prévue dans l'exercice (manque de temps oblige, celà est présent pour la structure du site) -->
+          <a href="#portfolio" class="down-arrow-btn"><i class="fa fa-chevron-down"></i></a> <!-- Rubrique Portfolio -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="portfolio text-center section-padding" id="portfolio">
+    <div class="container">
+      <div class="row">
+        <div id="portfolioSlider">
+          <ul class="slides">
+            <li>
+              <div class="col-md-4 wp4">
+                <div class="overlay-effect effects clearfix">
+                  <div class="img">
+                    <img src="img/portfolio-01.jpg" alt="Portfolio Item">
+                    <!-- Appel de l'image nommée portfolio-01.jpg qui se trouve dans le dans le dossier image -->
+                    <div class="overlay">
+                      <a class="expand"></a>
+                    </div>
+                  </div>
+                </div>
+                <h2>Créativiter</h2>
+                <p>Les esprits créatifs sont plus que bienvenue.</p>
+              </div>
+              <div class="col-md-4 wp4 delay-05s">
+                <div class="overlay-effect effects clearfix">
+                  <div class="img">
+                    <img src="img/portfolio-02.jpg" alt="Portfolio Item">
+                    <!-- Appel de l'image nommée portfolio-02.jpg qui se trouve dans le dans le dossier image -->
+                    <div class="overlay">
+                      <a class="expand"></a>
+                    </div>
+                  </div>
+                </div>
+                <h2>Une passion commune</h2>
+                <p>La passion pour la nature rapproche nos membres les uns des autres.</p>
+              </div>
+              <div class="col-md-4 wp4 delay-1s">
+                <div class="overlay-effect effects clearfix">
+                  <div class="img">
+                    <img src="img/portfolio-03.jpg" alt="Portfolio Item">
+                    <!-- Appel de l'image nommée portfolio-03.jpg qui se trouve dans le dans le dossier image. L'attribue "alt" doit être présent sur toutes les images, même s’il peut rester vide dans des cas précis. Il sert à apporter la même information que l’image (par exemple sa situation) dans le code de la page. Le but de ce report d’information est que celle-ci reste disponible lorsque l’image ne peut être chargée (suite par exemple à une cause de surcharge de serveur ou d’un problème de connexion) -->
+                    <div class="overlay">
+                      <a class="expand"></a>
+                    </div>
+                  </div>
+                </div>
+                <h2>Une communauté forte</h2>
+                <p>L'unité de notre communauté permet à cette association de vivre des échanges entre vous.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="ignite-cta text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <a href="Connexion.html" class="ignite-btn">Connexion</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="groupe text-center section-padding" id="groupe">
+    <!-- nouvelle section "groupe" -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="arrow">Nous voici</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="team-wrapper">
+          <div id="teamSlider">
+            <ul class="slides">
+              <li>
+                <!-- Affichage en liste des responsables -->
+                <div class="col-md-4 wp5">
+                  <!-- Affichage immédiat --->
+                  <h2>Kélian Schaffner</h2>
+                  <p>Etudiant en BTS SIO</p>
+                </div>
+                <div class="col-md-4 wp5 delay-05s">
+                  <!-- Affichage avec delay de 0.5 seconde -->
+                  <h2>Jason Surrurier</h2>
+                  <p>Etudiant en BTS SIO</p>
+                </div>
+                <div class="col-md-4 wp5 delay-1s">
+                  <!-- Affichage avec delay de 1 seconde -->
+                  <h2>Alexis Roussarie</h2>
+                  <p>Etudiant en BTS SIO</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </section>
+  <section class="dark-bg text-center section-padding contact-wrap" id="contact">
+    <!-- Section contact -->
+    <a href="#top" class="up-btn"><i class="fa fa-chevron-up"></i></a>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="arrow">Nous contacter</h1>
+        </div>
+      </div>
+      <div class="row contact-details">
+        <div class="col-md-4">
+          <div class="light-box box-hover">
+            <h2><i class="fa fa-map-marker"></i><span>Adresse physique</span></h2>
+            <p>34 Rue Wilson, 24400 Périgueux</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="light-box box-hover">
+            <h2><i class="fa fa-mobile"></i><span>Téléphone</span></h2>
+            <p>+61 9 211 3747</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="light-box box-hover">
+            <h2><i class="fa fa-paper-plane"></i><span>Adresse mél</span></h2>
+            <p><a>permaplant@domaine.fr</a></p>
+            <!-- à terme le but est de faire un lien capable d'ouvrir l'application par défaut de messagerie pour faciliter la mise en relation de l'utilisateur (je n'ai pas réussi à faire ça malgrès mes recherches -->
+          </div>
+        </div>
+      </div>
+  </section> <!-- Fin section -->
+  <footer>
+    <!-- Pied de page -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <ul class="legals">
+            <li><a>Termes &amp; Conditions :</a> <!-- Termes et conditions légals -->
+              <ul>
+                <li> - Dans la mesure où nous avons obtenu le consentement de la personne concernée pour le traitement
+                  des données à caractère personnel, l’article 6, paragraphe 1, alinéa 1, alinéa 1A du RGPD s’applique
+                  comme base juridique.</li>
+                <li> - Si le traitement des données à caractère personnel est nécessaire à l’exécution d’un contrat avec
+                  la personne concernée ou des mesures précontractuelles prises par la personne concernée, l’article 6,
+                  paragraphe 1, alinéa 1b du RGPD s’applique comme base juridique.</li>
+                <li> - Si le traitement des données est le résultat d’une obligation légale à laquelle nous sommes
+                  soumis, nous nous référons alors à l’article 6, paragraphe 1, alinéa 1c du RGPD comme base légale.
+                </li>
+                <li> - Lorsque des données à caractère personnel sont traitées afin de protéger les intérêts vitaux de
+                  la personne concernée ou d’une autre personne physique, il s’agit de la base juridique est l’article
+                  6, paragraphe 1, premier alinéa (RGPD).</li>
+                <li> - Si le traitement des données sert une mission d’intérêt public ou est effectué dans l’exercice de
+                  l’autorité publique, nous renvoyons à l’article 6, paragraphe 1, premier alinéa du RGPD.</li>
+                <li> - Dans la mesure où le traitement des données à caractère personnel est nécessaire pour sauvegarder
+                  les intérêts légitimes du responsable du traitement ou d’un tiers, sans porter atteinte aux intérêts,
+                  aux droits fondamentaux ou aux libertés de la personne concernée, l’article 6, paragraphe 1, premier
+                  alinéa du RGPD s’applique comme base juridique.</li>
+              </ul>
+            <li><a>Informations légales :</a> <!-- Informations légales -->
+              <ul>
+                <li> - Jean Bertrand</li>
+                <li> - 34 Rue de Lille, Crambrai, 59400</li>
+                <li> - Bertrand, Jean, 06.06.06.06, 26578932</li>
+              </ul>
+            </li>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer> <!-- Fin pied de page -->
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <!-- Inclue tous les plugins compilés (ci-dessous), ou inclue des fichiers individuels si nécessaire -->
+  <script src="js/waypoints.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <script src="js/jquery.flexslider.js"></script>
+  <script src="js/modernizr.js"></script>
+</body>
+
+</html>
